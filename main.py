@@ -2,7 +2,8 @@
 """Implements math functions without using operators except for '+' and '-' """
 
 __author__ = "Sasha Lukas"
-
+##Geeks for Geeks, google, and slack help. 
+##took about dayish, had to delete original repository.
 
 def add(x, y):
     """Add two integers. Handles negative values."""
