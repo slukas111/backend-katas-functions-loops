@@ -35,7 +35,12 @@ print(multiply(6,-8))
 def power(x, n):
     """Raise x to power n, where n >= 0"""
     # your code here
-    return
+    result = 1
+    for num in range(n):
+        result = multiply(x, result)
+    return result
+
+print(power(2, 8))
 
 
 def factorial(x):
