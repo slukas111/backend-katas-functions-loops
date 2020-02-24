@@ -60,7 +60,16 @@ print(factorial(4))
 def fibonacci(n):
     """Compute the nth term of fibonacci sequence"""
     # your code here
-    return
+    if n <= 0:
+        return 'Use a bigger number'
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(8))
 
 
 if __name__ == '__main__':
