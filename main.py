@@ -15,7 +15,21 @@ print(add(2,4))
 def multiply(x, y):
     """Multiply x with y. Handles negative values of x or y."""
     # your code here
-    return
+    result = 0
+    if y < 0:
+        for i in range(y, 0):
+            result = add(result, -x)
+        return result
+    elif y > 0:
+        for i in range(y):
+            result = add(result, x)
+        return result
+    else:
+        return 0
+print(multiply(6,-8))
+# print(multiply(5,3))
+# print(multiply(2,-4))
+# print(multiply(-4,-4))
 
 
 def power(x, n):
