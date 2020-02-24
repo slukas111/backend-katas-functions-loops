@@ -46,7 +46,15 @@ print(power(2, 8))
 def factorial(x):
     """Compute factorial of x, where x > 0"""
     # your code here
-    return
+    total = 1
+    if x > 0:
+        for num in range(x, 0, -1):
+            total = multiply(total, num)
+        return total
+    else:
+        return 1
+
+print(factorial(4))
 
 
 def fibonacci(n):
